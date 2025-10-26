@@ -20,4 +20,12 @@
 ---
 include:
   - board: adv360pro_left
+    shield: settings_reset
   - board: adv360pro_right
+    shield: settings_reset
+  - board: adv360pro_left
+    cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
+  - board: adv360pro_right
+    cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
+  - board: seeeduino_xiao_ble
+    shield: adv360pro_dongle prospector_adapter
