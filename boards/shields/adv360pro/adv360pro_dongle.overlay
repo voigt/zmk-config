@@ -3,6 +3,7 @@
 / {
     chosen {
         zmk,kscan = &mock_kscan;
+        zmk,physical-layout = &physical_layout0;  // New item added
     };
 
     mock_kscan: mock_kscan_0 {
@@ -12,7 +13,7 @@
         events = <0>;
     };
 
-    matrix_transform0: keymap_transform_0 {
+    default_transform: keymap_transform_0 {
         compatible = "zmk,matrix-transform";
         columns = <20>;
         rows = <5>;
@@ -31,12 +32,7 @@
     physical_layout0: physical_layout_0 {
         compatible = "zmk,physical-layout";
         display-name = "Default Layout";
-        transform = <&matrix_transform0>;
-    };
-
-    chosen {
-        zmk,kscan = &mock_kscan;
-        zmk,physical-layout = &physical_layout0;  // New item added
+        transform = <&default_transform>;
     };
 };
 
