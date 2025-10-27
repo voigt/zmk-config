@@ -28,4 +28,5 @@ include:
   - board: adv360pro_right
     cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
   - board: seeeduino_xiao_ble
-    shield: adv360pro_dongle prospector_adapter
+    shield: adv360_dongle dongle_screen
+    artifact-name: dongle-screen
