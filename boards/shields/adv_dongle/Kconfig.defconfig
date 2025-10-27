@@ -1,8 +1,8 @@
-if SHIELD_ADV360_DONGLE
+if SHIELD_ADV_DONGLE
 
 # Max 16 characters in keyboard name
 config ZMK_KEYBOARD_NAME
-    default "dongle360"
+    default "advdongle"
 
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
